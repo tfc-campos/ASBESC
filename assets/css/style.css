@@ -1,0 +1,493 @@
+* {
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a img {
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 65px;
+}
+
+.menu {
+    display: flex;
+    align-self: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    font-family: bebas-neue;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #6A6A6A;
+    font-size: 18px;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #d07401;
+    color: #FFFFFF;
+
+}
+
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/lousa2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.banner_title {
+    flex: 1;
+    display: flex;
+    padding-top: 100px;
+    margin-left: 30px;
+}
+
+.banner_title h1 {
+    font-family: bebas-neue;
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+}
+
+.banner_title h2 {
+    font-family: bebas-neue;
+    color: white;
+    font-size: 23px;
+    text-shadow: 0px 2x 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+.banner_botao {
+    font-family: bebas-neue;
+    color: white;
+    width: 282px;
+    height: 56px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+    border: 4px solid #FFFFFF;
+    background-color: transparent;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.center {
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+.box {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.boxbtn {
+    width: 70px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: #000000 solid 2px;
+}
+
+#doacao {
+    display: flex;
+    justify-content: center;
+    background-color: #d07401;
+}
+
+.doacao,
+.calendario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.title {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.desc {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.causas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.causa_1,
+.causa_2,
+.causa_3 {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 545px;
+    background-color: #FFF;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.causas img {
+    width: 360px;
+    height: 240px;
+}
+
+.causas .title {
+    font-size: 22px;
+    margin: 10px 0px;
+    color: #363636;
+}
+
+.causas .desc {
+    color: #bdbdbd;
+}
+
+.dados_causa,
+.dados_evento {
+    padding: 20px;
+}
+
+.levantado {
+    margin-right: 10px;
+    color: #bdbdbd;
+}
+
+.valor {
+    color: #d07401;
+    margin-left: 4px;
+    font-weight: 700;
+}
+
+.meta {
+    display: flex;
+    margin: 15px 0px;
+}
+
+.progresso {
+    /* display: flex; */
+    /* float: left; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 85%;
+    background-color: #e1e1e1;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.barra {
+    background-color: #d07401;
+    position: relative;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.porcentagem {
+    font-size: 17px;
+    float: right;
+    color: #363636;
+    margin-top: 4px;
+    /* margin-bottom: 25px; */
+    /* margin-left: 10px; */
+}
+
+.botao {
+    background-color: transparent;
+    border: 2px solid #d07401;
+    width: 150px;
+    height: 40px;
+    color: #363636;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 8px;
+    cursor: pointer;
+
+}
+
+#calendario {
+    display: flex;
+    justify-content: center;
+}
+
+.calendario .title {
+    color: #363636;
+}
+
+.calendario .desc {
+    color: #363636;
+}
+
+.evento {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.evento_1,
+.evento_2,
+.evento_3 {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 545px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.evento .banner {
+    width: 360px;
+    height: 240px;
+}
+
+.data {
+    background-color: #d07401;
+    position: absolute;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    font-weight: 700;
+}
+
+.evento_1 .banner {
+    background-image: url(../img/criançafeliz.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.evento_2 .banner {
+    background-image: url(../img/lousa.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.evento_3 .banner {
+    background-image: url(../img/criança.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dados_evento .title {
+    font-size: 22px;
+    margin: 10px 0px;
+    color: #363636;
+}
+
+.dados_evento .desc {
+    color: #6A6A6A;
+    margin-top: 22px;
+    margin-bottom: 11px;
+}
+
+.local {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hora,
+.endereço {
+    display: flex;
+}
+
+.local h4 {
+    margin: 0px;
+    margin-left: 5px;
+    margin-bottom: -1px;
+}
+
+#inscrever {
+    display: flex;
+    justify-content: center;
+    background-color: #d07401;
+}
+
+.chamada {
+    padding: 70px;
+    width: 100%;
+}
+
+.chamada .title {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.botao_chamada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+
+.botao_chamada button {
+    background-color: transparent;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    width: 150px;
+}
+
+#voluntarios {
+    display: flex;
+    justify-content: center;
+}
+
+.pessoas {
+    display: flex;
+}
+
+.pessoa_1,
+.pessoa_2,
+.pessoa_3,
+.pessoa_4 {
+    width: 265px;
+    height: 365px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pessoas img {
+    width: 265px;
+    height: 265px;
+    background-size: cover;
+}
+
+.rede_social {
+    display: flex;
+    justify-content: center;
+}
+
+.rede_social img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nome {
+    text-transform: uppercase;
+    text-align: center;
+    color: #363636;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+#contactar {
+    display: flex;
+    justify-content: center;
+    background-color: #d07401;
+}
+
+.formulario {
+    margin: 15px;
+}
+
+.formulario .campo {
+    width: 100%;
+    margin: 5px;
+}
+
+.botao_enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_enviar button {
+    background-color: transparent;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    width: 150px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #363636;
+    /* padding: 50px; */
+}
+
+.widget_empresa img {
+    height: 50px;
+}
+
+.widget_pagina li,
+.widget_contato li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
