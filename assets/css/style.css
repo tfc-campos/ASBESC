@@ -59,7 +59,7 @@ nav a {
 
 nav .active a,
 nav a:hover {
-    background-color: #d07401;
+    background-color: #7db8c5;
     color: #FFFFFF;
 
 }
@@ -152,7 +152,7 @@ nav a:hover {
 #doacao {
     display: flex;
     justify-content: center;
-    background-color: #d07401;
+    background-color: #7db8c5;
 }
 
 .doacao,
@@ -220,7 +220,7 @@ nav a:hover {
 }
 
 .valor {
-    color: #d07401;
+    color: #7db8c5;
     margin-left: 4px;
     font-weight: 700;
 }
@@ -242,7 +242,7 @@ nav a:hover {
 }
 
 .barra {
-    background-color: #d07401;
+    background-color: #7db8c5;
     position: relative;
     height: 10px;
     border-radius: 5px;
@@ -259,7 +259,7 @@ nav a:hover {
 
 .botao {
     background-color: transparent;
-    border: 2px solid #d07401;
+    border: 2px solid #7db8c5;
     width: 150px;
     height: 40px;
     color: #363636;
@@ -307,7 +307,7 @@ nav a:hover {
 }
 
 .data {
-    background-color: #d07401;
+    background-color: #7db8c5;
     position: absolute;
     color: #FFFFFF;
     padding: 8px 12px;
@@ -367,7 +367,7 @@ nav a:hover {
 #inscrever {
     display: flex;
     justify-content: center;
-    background-color: #d07401;
+    background-color: #7db8c5;
 }
 
 .chamada {
@@ -446,7 +446,7 @@ nav a:hover {
 #contactar {
     display: flex;
     justify-content: center;
-    background-color: #d07401;
+    background-color: #7db8c5;
 }
 
 .formulario {
@@ -477,17 +477,80 @@ nav a:hover {
 footer {
     display: flex;
     align-items: center;
-    background-color: #363636;
-    /* padding: 50px; */
+    background-color: #2a2f36;
+    color: #5d6166;
+}
+
+
+.logo_rodape {
+    display: flex;
+    width: 500px;
+}
+
+.logo_rodape p {
+    font-size: 18px;
+}
+
+.pages_rodape {
+    display: flex;
+    width: 250px;
+}
+
+.contato_rodape {
+    display: flex;
+    width: 250px;
 }
 
 .widget_empresa img {
-    height: 50px;
+    height: 65px;
 }
 
 .widget_pagina li,
 .widget_contato li {
     list-style: none;
+    text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+.widget_title {
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.widget_pagina ul,
+.widget_contato ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.widget_pagina li a,
+.widget_contato li {
+    text-decoration: none;
+    font-size: 17px;
+    color: #5d6166;
+    display: block;
+    padding: 5px;
+}
+
+.barra_rodape {
+    width: 100%;
+    /* background-color: #363636; */
+    border-top: 1px solid #363636;
+}
+
+.rede_contato {
+    /* background-color: blueviolet; */
+    justify-items: center;
+}
+
+.rede_contato img {
+    height: 40px;
+    margin: 10px;
 }
